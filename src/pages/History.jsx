@@ -12,20 +12,20 @@ import Header from '../components/Header/Header';
 //       <nav className="header-nav">
 //         <ul>
 //           <li><a href="../index.html">Home</a></li>
-//           <li><a href="../history/history.html">History</a></li>
+//           <li><a href="./history.html">History</a></li>
 //           <li><a href="../gallery/gallery.html">Gallery</a></li>
-//           <li><a href="./contact.html">Contact Us</a></li>
+//           <li><a href="../contact/contact.html">Contact Us</a></li>
 //         </ul>
 //       </nav>
 //     </div>
 //   </header>
 // );
 
-const ContactPage = () => (
+const HistoryPage = () => (
   <div>
     <Header/>
-    <h1>Contact</h1>
+    <h1>History</h1>
   </div>
 );
 
-export default ContactPage;
+export default HistoryPage;

@@ -8,33 +8,6 @@ import chickenkatsu from './assets/images/ChickenKatsu.jpg';
 import brownies from './assets/images/Brownies.webp';
 import Header from './components/Header/Header';
 
-// const Header = () => {
-//   return (
-//     <header className="header">
-//       <div className="header-container">
-//         <div className="header-logo">
-//           <img src={logo} alt="Glass House Logo" />
-//           Glass House
-//         </div>
-
-//         <div className="hamburger">
-//           <span></span>
-//           <span></span>
-//           <span></span>
-//         </div>
-
-//         <nav className="header-nav">
-//           <ul>
-//             <li><a href="./index.html">Home</a></li>
-//             <li><a href="./history/history.html">About</a></li>
-//             <li><a href="./gallery/gallery.html">Gallery</a></li>
-//             <li><a href="./contact/contact.html">Contact Us</a></li>
-//           </ul>
-//         </nav>
-//       </div>
-//     </header>
-//   );
-// };
 
 const HeroSection = () => {
   return (

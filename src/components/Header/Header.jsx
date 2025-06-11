@@ -7,10 +7,10 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <div className="header-logo">
+        <a className="header-logo">
           <img src={logo} alt="Glass House Logo" />
           Glass House
-        </div>
+        </a>
 
         <div className="hamburger">
           <span></span>
