@@ -80,3 +80,218 @@ header {
       nav a:hover::after {
         width: 100%;
       }
+
+      @media (max-width: 768px) {
+        .hero-content h1 {
+          font-size: 2.5rem;
+        }
+
+        .menu-item {
+          width: 100%;
+          max-width: 400px;
+        }
+
+        .menu-row {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .menu-row.reverse {
+          flex-direction: column;
+        }
+
+        nav ul {
+          gap: 20px;
+        }
+
+        .category {
+          gap: 15px;
+        }
+
+        .ctg {
+          padding: 15px 20px;
+        }
+      }
+
+      /* Smooth scrolling and performance */
+      /* * {
+        will-change: transform;
+      }
+
+      .main-content {
+        padding: 0;
+        margin: 0;
+      } */
+
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 5px;
+        z-index: 1001;
+      }
+
+      .hamburger span {
+        width: 25px;
+        height: 3px;
+        background-color: #efe4d2;
+        margin: 3px 0;
+        transition: 0.3s;
+        border-radius: 2px;
+      }
+
+      .hamburger.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+
+      .hamburger.active span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .hamburger.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+
+      /* Mobile Navigation */
+      .header-nav {
+        transition: all 0.3s ease;
+      }
+
+      .mobile-nav-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 999;
+      }
+
+      .mobile-nav-overlay.active {
+        display: block;
+      }
+
+      /* Enhanced Responsive Design */
+      @media (max-width: 768px) {
+        /* Header adjustments */
+        header {
+          padding: 8px 20px;
+        }
+
+        .hamburger {
+          display: flex;
+        }
+
+        .header-nav {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 280px;
+          height: 100vh;
+          background: linear-gradient(135deg, #537d5d 0%, #4a6f54 100%);
+          padding: 80px 30px 30px;
+          box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+          transition: right 0.3s ease;
+          z-index: 1000;
+        }
+
+        .header-nav.active {
+          right: 0;
+        }
+
+        .header-nav ul {
+          flex-direction: column;
+          gap: 30px;
+          align-items: flex-start;
+        }
+
+        .header-nav li {
+          width: 100%;
+        }
+
+        .header-nav a {
+          display: block;
+          padding: 15px 0;
+          font-size: 18px;
+          border-bottom: 1px solid rgba(239, 228, 210, 0.2);
+        }
+
+        /* Hero section */
+        .hero-content {
+          padding: 30px 20px;
+          margin: 0 15px;
+        }
+
+        .hero-content h1 {
+          font-size: 2.8rem;
+          margin-bottom: 15px;
+        }
+
+        #hero button {
+          padding: 12px 30px;
+          font-size: 1rem;
+        }
+
+        
+
+      /* Tablet adjustments */
+      @media (max-width: 1024px) and (min-width: 769px) {
+        .container {
+          margin: 0 30px;
+        }
+
+        .menu-item {
+          width: 45%;
+          min-width: 400px;
+        }
+
+        .hero-content h1 {
+          font-size: 3.2rem;
+        }
+
+        .menu-title {
+          font-size: 2.6rem;
+        }
+      }
+
+      /* Small mobile adjustments */
+      @media (max-width: 480px) {
+        .header-logo {
+          font-size: 1rem;
+        }
+
+        .header-logo img {
+          width: 35px;
+          height: 35px;
+        }
+
+        .hero-content h1 {
+          font-size: 2.2rem;
+        }
+
+        .ctg {
+          padding: 10px 15px;
+          font-size: 13px;
+        }
+
+        .menu-item {
+          min-height: 250px;
+        }
+
+        .menu-item .desc h3 {
+          font-size: 20px;
+        }
+
+        .menu-section {
+          padding: 40px 20px;
+        }
+
+        .menu-title {
+          font-size: 1.8rem;
+        }
+
+        .small-item {
+          padding: 20px 15px;
+        }
+      }

@@ -1,9 +1,10 @@
 import { NavLink } from 'react-router-dom';
+// import { useState, useEffect } from 'react';
 import logo from '../../assets/images/logo.jpg';
 import "./Header.css";
-import "./script.js";
 
 const Header = () => {
+
   return (
     <header className="header">
       <div className="header-container">
