@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #EFE4D2;
+    color: #666;
+}
+
+header {
+    background-color:#537D5D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;    
+    padding-top: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:10px;
+    padding: 10px 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    margin-top : 5px;
+}
+
+.header-logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap:70px;
+    margin-left: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #EFE4D2;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #D2D0A0;
+}
+
+#hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: left;
+    color: white;
+    font-size: 2em;
+}
+
+.hero-content {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#hero button {
+    padding: 10px 20px;
+    background-color: #537D5D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #EFE4D2;
+    color: #131D4F;
+}
+
+.container {
+    margin: 0 50px;
+    padding: 30px;
+}
+
+.menu1  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu1 .menu-item {
+    flex: 1 1 30%;
+    width: 100%;
+}
+
+.menu-item {
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.menu-item img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 30%;
+    transition: transform 0.3s ease;
+}
+
+.menu-item img:hover {
+    transform: scale(1.05);   
+}
+
+.menu-item h2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.about-section {
+    background-color: #9EBC8A;
+    padding: 40px 0;
+}
+
+#about-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap ;
+}
+
+.about-box {
+    padding: 0;
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.large-box {
+    flex: 2;
+    background-color: #f0f0f0;
+}
+
+.small-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.small-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.about-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.dynamic-text {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 200px; /* Adjust this based on how many items you want to display at once */
+    overflow: hidden;
+}
+
+.dynamic-text li {
+    display: inline-block; /* Keeps items in a line */
+    width: 100%; /* Each item takes full width of the container */
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 2;
+    padding: 10px 0;
+    animation: slide 12s steps(14) infinite; /* Adjust steps to match your list length */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(100%); /* Starts from below */
+    }
+    50% {
+        transform: translateY(0); /* Normal position */
+    }
+    100% {
+        transform: translateY(-100%); /* Ends up above */
+    }
+}
+
+.dynamic-text li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+
+.dynamic-text li span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 78px;
+    width: 100%;
+    background: #000000;
+    border-left: 2px solid #fff;
+    animation: typing 3s steps(14) infinite; /* Adjust for typing effect speed */
+}
+
+@keyframes typing {
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.about-box p {
+    font-size: 1rem;
+    color: #666;
+    text-align: justify;
+    align-items: center;
+
+}
+
+.about-second-section {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #D2D0A0; */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.about-second-section p {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #537D5D;
+    color: #EFE4D2;
+    text-align: center;
+    padding: 20px 0;
+}

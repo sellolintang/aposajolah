@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #EFE4D2;
+    color: #666;
+}
+
+header {
+    background-color:#537D5D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;    
+    padding-top: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:10px;
+    padding: 10px 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    margin-top : 5px;
+}
+
+.header-logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap:70px;
+    margin-left: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #EFE4D2;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #D2D0A0;
+}
+
+.heading-with-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    padding: 30px 0;
+}
+
+.heading-with-line::before,
+.heading-with-line::after {
+    content: "";
+    flex: 1;
+    border-top: 1px solid #020202;
+    margin: 0 15px;
+}
+
+.heading-with-line span {
+    font-weight: bold;
+    color: black;
+}
+
+.heading-section-main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.heading-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 70px;
+}
+
+.maps, .form-messege {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.maps iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+}
+
+.form-group {
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 8px;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 200px;
+}
+
+/* Tombol Kirim */
+.submit-btn {
+    background-color: #537D5D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #D2D0A0;
+    color: #537D5D;
+}
+
+/* Social Section */
+.social-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 200px;
+    border-radius: 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.social-icons a {
+    font-size: 2.5rem;
+    color: #537D5D;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #f0f0f0;
+}
+
+
+footer {
+    background-color: #537D5D;
+    color: #EFE4D2;
+    text-align: center;
+    padding: 20px 0;
+}
