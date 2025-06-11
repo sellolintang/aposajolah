@@ -26,9 +26,9 @@ const MenuSection = () => {
   return (
     <section className="menu">
       <div className="category">
-        <a href="" className="ctg"><div>Breakfast</div></a>
-        <a href="" className="ctg"><div>Lunch</div></a>
-        <a href="" className="ctg"><div>Dessert</div></a>
+        <h2 className="ctg"><div>Breakfast</div></h2>
+        <h2 className="ctg"><div>Lunch</div></h2>
+        <h2 className="ctg"><div>Dessert</div></h2>
       </div>
 
       <div className="container">
@@ -137,7 +137,7 @@ const MenuContent = () => {
       <MenuItem
         image={chickenkatsu}
         title="Fettucine Carbonara with Chicken Katsu.jpg"
-        description="Fettucine Carbonara with Chicken Katsu.jpg"
+        description="Fettucine Carbonara with Chicken Katsu"
       />
     </section>
   );

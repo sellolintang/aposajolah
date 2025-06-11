@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 import '../css/About.css';
 import CEO from '../assets/images/CEO.jpeg';
 import steak from '../assets/images/Steak.webp';
@@ -8,6 +9,9 @@ import cheesychicken from '../assets/images/CheesyChicken.jpg';
 import cordonbleu from '../assets/images/CordonBleu.jpg';
 import chickenkatsu from '../assets/images/ChickenKatsu.jpg';
 import brownies from '../assets/images/Brownies.webp';
+import burger from '../assets/images/burger.jpg';
+import autumn from '../assets/images/Autumn.jpg';
+import nasibakar from '../assets/images/NasiBakar.jpg';
 
 const AboutPage = () => (
   <div>
@@ -77,7 +81,7 @@ const AboutPage = () => (
                         </p>
                     </div>
                     <div className="card-photo">
-                        <img src="./history-img/Fettucine Carbonara with Chicken Katsu.jpg" alt="Fettucine Carbonara with Chicken Katsu" />
+                        <img src={chickenkatsu} alt="Fettucine Carbonara with Chicken Katsu" />
                     </div>
                 </div>
             </section>
@@ -85,7 +89,7 @@ const AboutPage = () => (
             <section className="history-section">
                 <div className="container" id="with-photo">
                     <div className="card-photo">
-                        <img src="./history-img/Cheese Burger with Fries.jpg" alt="foto menu" />
+                        <img src={burger} alt="foto menu" />
                     </div>
                     <div className="text-info">
                         <h2>Cheese Burger with Fries</h2>
@@ -105,7 +109,7 @@ const AboutPage = () => (
                         </p>
                     </div>
                     <div className="card-photo">
-                        <img src="../assets/img/Autumn Beef Bowl.jpg" alt="foto menu" />
+                        <img src={autumn} alt="foto menu" />
                     </div>
                 </div>
             </section>
@@ -113,7 +117,7 @@ const AboutPage = () => (
             <section className="history-section">
                 <div className="container" id="with-photo">
                     <div className="card-photo">
-                        <img src="./history-img/Nasi Bakar Krengsengan Daging.jpg" alt="foto menu" />
+                        <img src={nasibakar} alt="foto menu" />
                     </div>
                     <div className="text-info">
                         <h2>Nasi Bakar Krengsengan Daging</h2>
@@ -123,6 +127,7 @@ const AboutPage = () => (
                     </div>
                 </div>
             </section>
+            <Footer />
   </div>
 );
 

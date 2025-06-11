@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 import "../css/Contact.css";
 
 const ContactPage = () => (
@@ -66,7 +67,6 @@ const ContactPage = () => (
                             className="social-icon"
                             rel="noopener noreferrer"
                         >
-                            {/* <FaWhatsapp />  */}
                         </a>
                         <a
                             href="https://www.instagram.com/theglasshouseresto"
@@ -74,7 +74,6 @@ const ContactPage = () => (
                             className="social-icon"
                             rel="noopener noreferrer"
                         >
-                            {/* <FaInstagram />  */}
                         </a>
                         <a
                             href="https://maps.app.goo.gl/Z6GF59kwZn7YX52Q7"
@@ -82,7 +81,6 @@ const ContactPage = () => (
                             className="social-icon"
                             rel="noopener noreferrer"
                         >
-                            {/* <FaMapMarkerAlt /> */}
                         </a>
                         <a
                             href="https://www.facebook.com/theglasshouseresto/"
@@ -90,11 +88,11 @@ const ContactPage = () => (
                             className="social-icon"
                             rel="noopener noreferrer"
                         >
-                            {/* <FaFacebookF /> */}
                         </a>
                     </div>
                 </div>
             </section>
+            <Footer />
   </div>
 );
 
