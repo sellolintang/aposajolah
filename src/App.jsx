@@ -73,8 +73,8 @@ const AboutSection = () => {
 
           <div className="small-item">
             <p>
-              Restoran ini terbagi ke dalam beberapa area dengan nuansa
-              berbeda: ada Main Hall yang mewah...
+              The Glass House menawarkan beragam menu dengan harga terjangkau. 
+              Pilihan menu mencakup hidangan Asia dan Western
             </p>
           </div>
         </div>
