@@ -73,8 +73,7 @@ const AboutSection = () => {
 
           <div className="small-item">
             <p>
-              The Glass House menawarkan beragam menu dengan harga terjangkau. 
-              Pilihan menu mencakup hidangan Asia dan Western
+              The Glass House menawarkan beragam menu seperti hidangan Asia dan Western
             </p>
           </div>
         </div>
