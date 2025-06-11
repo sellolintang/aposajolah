@@ -113,16 +113,6 @@ header {
         }
       }
 
-      /* Smooth scrolling and performance */
-      /* * {
-        will-change: transform;
-      }
-
-      .main-content {
-        padding: 0;
-        margin: 0;
-      } */
-
       .hamburger {
         display: none;
         flex-direction: column;
